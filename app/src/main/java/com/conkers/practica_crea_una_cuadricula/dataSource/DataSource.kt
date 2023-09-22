@@ -1,22 +1,23 @@
 package com.conkers.practica_crea_una_cuadricula.dataSource
 
+import com.conkers.practica_crea_una_cuadricula.Modelo.Cuadricula
 import com.conkers.practica_crea_una_cuadricula.R
 
 object DataSource {
     val topics = listOf(
-        Topic(R.string.architecture, 58, R.drawable.architecture),
-        Topic(R.string.crafts, 121, R.drawable.crafts),
-        Topic(R.string.business, 78, R.drawable.business),
-        Topic(R.string.culinary, 118, R.drawable.culinary),
-        Topic(R.string.design, 423, R.drawable.design),
-        Topic(R.string.fashion, 92, R.drawable.fashion),
-        Topic(R.string.film, 165, R.drawable.film),
-        Topic(R.string.gaming, 164, R.drawable.gaming),
-        Topic(R.string.drawing, 326, R.drawable.drawing),
-        Topic(R.string.lifestyle, 305, R.drawable.lifestyle),
-        Topic(R.string.music, 212, R.drawable.music),
-        Topic(R.string.painting, 172, R.drawable.painting),
-        Topic(R.string.photography, 321, R.drawable.photography),
-        Topic(R.string.tech, 118, R.drawable.tech)
+        Cuadricula(R.string.architecture, 58, R.drawable.architecture),
+        Cuadricula(R.string.crafts, 121, R.drawable.crafts),
+        Cuadricula(R.string.business, 78, R.drawable.business),
+        Cuadricula(R.string.culinary, 118, R.drawable.culinary),
+        Cuadricula(R.string.design, 423, R.drawable.design),
+        Cuadricula(R.string.fashion, 92, R.drawable.fashion),
+        Cuadricula(R.string.film, 165, R.drawable.film),
+        Cuadricula(R.string.gaming, 164, R.drawable.gaming),
+        Cuadricula(R.string.drawing, 326, R.drawable.drawing),
+        Cuadricula(R.string.lifestyle, 305, R.drawable.lifestyle),
+        Cuadricula(R.string.music, 212, R.drawable.music),
+        Cuadricula(R.string.painting, 172, R.drawable.painting),
+        Cuadricula(R.string.photography, 321, R.drawable.photography),
+        Cuadricula(R.string.tech, 118, R.drawable.tech)
     )
 }
