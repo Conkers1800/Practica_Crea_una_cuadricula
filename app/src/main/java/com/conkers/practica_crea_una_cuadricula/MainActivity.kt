@@ -29,13 +29,26 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     Greeting("Android")
-
+                    CuadriculaTema(
+                        modifier = Modifier.padding(dimensionResource(R.dimen.padding_small))
+                    )
                 }
             }
         }
     }
 }
-
+@Composable
+fun CuadriculaTema(modifier: Modifier = Modifier) {
+    LazyVerticalGrid(
+        columns = GridCells.Fixed(2),
+        verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_small)),
+        horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_small)),
+        modifier = modifier
+    ) {
+        items(DataSource.topics) {
+        }
+    }
+}
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
