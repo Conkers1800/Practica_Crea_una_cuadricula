@@ -43,7 +43,6 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
                     CuadriculaTema(
                         modifier = Modifier.padding(dimensionResource(R.dimen.padding_small))
                     )
@@ -107,19 +106,17 @@ fun CuadriculaNotificacion(cuadricula: Cuadricula, modifier: Modifier = Modifier
         }
     }
 }
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun Visualizarcuadricula() {
     Practica_Crea_una_cuadriculaTheme {
-        Greeting("Android")
+        val cuadricula= Cuadricula(R.string.photography, 200, R.drawable.photography)
+        Column (
+            modifier = Modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ){
+            CuadriculaNotificacion(cuadricula = cuadricula)
+        }
     }
 }
